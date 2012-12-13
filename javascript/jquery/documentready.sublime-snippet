@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$document.ready(function () {
+	$0
+});
+]]></content>
+	<tabTrigger>jqdocready</tabTrigger>
+	<description>$document.ready</description>
+</snippet>
