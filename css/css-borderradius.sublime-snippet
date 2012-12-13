@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+-webkit-border-radius: ${1:0.9em};
+-moz-border-radius: ${1:0.9em};
+border-radius: ${1:0.9em};
+]]></content>
+	<tabTrigger>cssborderradius</tabTrigger>
+	<description>Browser prefixed border radius statement.</description>
+</snippet>
