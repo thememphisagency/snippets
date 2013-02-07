@@ -1,0 +1,19 @@
+{
+  "name": "tma-snippets",
+  "version": "0.0.1",
+  "description": "Snippets used by The Memphis Agency during development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thememphisagency/snippets.git"
+  },
+  "author": "The Memphis Agency",
+  "license": "BSD",
+  "private": true
+}
