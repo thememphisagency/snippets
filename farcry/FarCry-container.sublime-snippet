@@ -2,6 +2,6 @@
 	<content><![CDATA[
 <con:container label="$1" desc="$2" ${3:${4:lRules="$5"} ${6:lExcludedRules="$7"}} />
 ]]></content>
-	<tabTrigger>container</tabTrigger>
+	<tabTrigger>fccontainer</tabTrigger>
 	<description>FarCry Container tag</description>
 </snippet>

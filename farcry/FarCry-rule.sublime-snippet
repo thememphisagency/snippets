@@ -4,6 +4,6 @@
 $0
 </cfcomponent>
 ]]></content>
-	<tabTrigger>rule</tabTrigger>
+	<tabTrigger>fcrule</tabTrigger>
 	<description>FarCry Rule</description>
 </snippet>

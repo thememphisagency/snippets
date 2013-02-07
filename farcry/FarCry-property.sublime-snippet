@@ -2,6 +2,6 @@
 	<content><![CDATA[
 <cfproperty ftWizardStep="$1" ftSeq="$2" ftFieldset="$3" ftLabel="$4" name="$5" type="$6" ftType="$7" default="$8" ftDefault="$9" required="${10:false}" />
 ]]></content>
-	<tabTrigger>property</tabTrigger>
+	<tabTrigger>fcproperty</tabTrigger>
 	<description>FarCry Property</description>
 </snippet>

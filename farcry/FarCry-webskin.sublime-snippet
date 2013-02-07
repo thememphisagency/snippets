@@ -10,6 +10,6 @@ $0
 
 <cfsetting enablecfoutputonly="false" />
 ]]></content>
-	<tabTrigger>webskin</tabTrigger>
+	<tabTrigger>fcwebskin</tabTrigger>
 	<description>FarCry Webskin</description>
 </snippet>

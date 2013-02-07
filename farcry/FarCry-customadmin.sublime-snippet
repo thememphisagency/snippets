@@ -21,6 +21,6 @@
 
 <cfsetting enablecfoutputonly="false" />
 ]]></content>
-	<tabTrigger>customadmin</tabTrigger>
+	<tabTrigger>fccustomadmin</tabTrigger>
 	<description>FarCry Custom Admin</description>
 </snippet>

@@ -4,6 +4,6 @@
 $0
 </cfcomponent>
 ]]></content>
-	<tabTrigger>config</tabTrigger>
+	<tabTrigger>fcconfig</tabTrigger>
 	<description>FarCry Config Object</description>
 </snippet>

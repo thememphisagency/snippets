@@ -4,6 +4,6 @@
 $0
 </cfcomponent>
 ]]></content>
-	<tabTrigger>type</tabTrigger>
+	<tabTrigger>fctype</tabTrigger>
 	<description>FarCry Custom Type</description>
 </snippet>
