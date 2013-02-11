@@ -9,7 +9,8 @@
   "devDependencies": {
     "mocha": "1.8.x",
     "xml2js": "0.2.x",
-    "should": "1.2.x"
+    "should": "1.2.x",
+    "findit": "0.1.x"
   },
   "repository": {
     "type": "git",
