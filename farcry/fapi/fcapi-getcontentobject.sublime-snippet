@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+application.fapi.getContentObject(${1:objectid}${2:, 'typename'})$0
+]]></content>
+	<tabTrigger>fcapigetcontentobject</tabTrigger>
+	<description>FarCry API getContentObject method</description>
+</snippet>

@@ -11,22 +11,35 @@ var exit = 0;
 
 var precommit = function () {
 
-	exec('make', function (err, stderr, stdout) {
-	
-		var result = stderr || stdout;
+	// get the root of git, that is where we want to run make from
+	// not within the .git/hooks directory
+	exec('git rev-parse --show-toplevel', function (err, stderr, stdout) {
 
-		if (err || result.indexOf('tests complete') < 0) {
-			console.log('tests: ' + symbols.err);
-			// exist non-zero to abort the commit
-			exit = 1;
-		} else {
-			console.log('tests: ' + symbols.ok);
+		if (err) {
+			console.log('Failed to find git root.');
+			process.exit(1);
 		}
 
-		process.exit(exit);
+		exec('make', {cwd:stderr.trim()}, function (err, stderr, stdout) {
+		
+			var result = stderr || stdout;
+
+			if (err || result.indexOf('tests complete') < 0) {
+				console.log('tests: ' + symbols.err);
+				console.log('Commit aborted. Tests must pass before you commit. Run \'make\' to view test results.');
+				// exist non-zero to abort the commit
+				process.exit(1);
+			} else {
+				console.log('tests: ' + symbols.ok);
+				console.log('Commit proceeding.');
+				process.exit(0);
+			}
+
+		});
 
 	});
 
 }
 
 console.log('Running pre-commit checks.');
+precommit();
