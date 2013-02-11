@@ -1,0 +1,50 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var fs = require('fs');
+var path = require('path');
+
+var hooks = ['pre-commit'];
+var symbols = {
+	ok: '\x1B[32m✓\x1B[39m',
+	err: '\x1B[31m✖\x1B[39m'
+};
+
+var postinstall = function () {
+
+	// let's make sure the hooks directory exists in .git (i.e. .git/hooks)
+	var hooksInGit = path.resolve(__dirname, '..', '.git', 'hooks');
+	if (!fs.existsSync(hooksInGit)) {
+		fs.mkdirSync(hooksInGit, '0755');
+	}
+
+	// copy across the git pre-commit hook (git-hooks/pre-commit) into .git/hooks/pre-commit
+	hooks.forEach(function (hook) {
+
+		var hookInRepo = path.resolve(__dirname, '..', 'git-hooks', hook);
+
+		if (fs.existsSync(hookInRepo)) {
+
+			var hooksInGit = path.resolve(__dirname, '..', '.git', 'hooks');
+			var hookInGit = path.resolve(__dirname, '..', '.git', 'hooks', hook);
+
+			// if it does, unlink the hook, and we'll relink it later
+			if (fs.existsSync(hookInGit)) {
+				fs.unlinkSync(hookInGit);
+			}
+
+			fs.linkSync(hookInRepo, hookInGit);
+
+			console.log(symbols.ok + ' ' + hook + ' git hook installed.');
+
+		}
+
+	});
+
+	console.log('\x1B[32m' + 'npm postinstall complete.' + '\x1B[39m');
+
+};
+
+// run the postinstall code
+postinstall();

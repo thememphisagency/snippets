@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
+"use strict";
+
 var exec = require('child_process').exec;
 
 var symbols = {
 	ok: '\x1B[32m✓\x1B[39m',
 	err: '\x1B[31m✖\x1B[39m'
 };
-
 var exit = 0;
 
 var precommit = function () {
@@ -20,7 +21,7 @@ var precommit = function () {
 			process.exit(1);
 		}
 
-		exec('make', {cwd:stderr.trim()}, function (err, stderr, stdout) {
+		exec('make', {cwd: stderr.trim()}, function (err, stderr, stdout) {
 		
 			var result = stderr || stdout;
 
@@ -39,7 +40,7 @@ var precommit = function () {
 
 	});
 
-}
+};
 
 console.log('Running pre-commit checks.');
 precommit();
