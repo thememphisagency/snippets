@@ -24,4 +24,5 @@
 </cfcomponent>
 ]]></content>
 	<tabTrigger>fctsuite</tabTrigger>
+	<description>FarCry Test test suite stub code.</description>
 </snippet>

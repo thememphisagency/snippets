@@ -3,4 +3,5 @@
 application.fapi.findType(${1:stObj.objectid})$0
 ]]></content>
 	<tabTrigger>fcapifindtype</tabTrigger>
+	<description>FarCry API findType method</description>
 </snippet>

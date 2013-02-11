@@ -3,4 +3,5 @@
 assertFalse(${1:boolean condition}${2:[, String message]})$0
 ]]></content>
 	<tabTrigger>fctaf</tabTrigger>
+	<description>FarCry Test assertFalse method</description>
 </snippet>

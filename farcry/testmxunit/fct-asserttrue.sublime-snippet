@@ -3,4 +3,5 @@
 assertTrue(${1:boolean condition}${2:[, String message]})$0
 ]]></content>
 	<tabTrigger>fctat</tabTrigger>
+	<description>FarCry Test assertTrue method</description>
 </snippet>

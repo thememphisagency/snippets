@@ -3,4 +3,5 @@
 assertEquals(${1:any expected},${2:any actual}${3:[, String message]})$0
 ]]></content>
 	<tabTrigger>fctae</tabTrigger>
+	<description>FarCry Test assertEquals method</description>
 </snippet>

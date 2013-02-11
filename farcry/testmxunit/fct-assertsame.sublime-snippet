@@ -3,4 +3,5 @@
 assertSame(${1:any obj1},${2:any obj2}${3:[, String message]})$0
 ]]></content>
 	<tabTrigger>fctas</tabTrigger>
+	<description>FarCry Test assertSame method</description>
 </snippet>
