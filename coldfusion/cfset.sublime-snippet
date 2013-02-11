@@ -3,4 +3,5 @@
 <cfset $1 />
 ]]></content>
 	<tabTrigger>cfset</tabTrigger>
+	<description>cfset tag.</description>
 </snippet>
