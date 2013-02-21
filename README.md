@@ -11,6 +11,8 @@ A cheat sheet for the various groups, and the prefix for triggers in these group
 * farcry : fc
 	* api : fcapi
 	* testmxunit : fct
+	* fcbpostoffice : fcbpo
+	* fcbhistory : fcbh
 * html : html
 * javascript : js
 	* jquery : jq
