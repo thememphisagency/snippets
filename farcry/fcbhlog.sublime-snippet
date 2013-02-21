@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<cfscript>
+
+	stProperties = structNew();
+	stData = structNew();
+
+	${1:/* add properties to the data struct for storage in the log */}
+
+	stProperties.data = serializeJSON(stData);
+	stProperties.reference = '$2';
+
+	result = application.fapi.getContentType('fcbLog').createData(stProperties = stProperties);
+
+</cfscript>$0
+]]></content>
+	<tabTrigger>fcbhlog</tabTrigger>
+	<description>fcbHistory log code</description>
+</snippet>
