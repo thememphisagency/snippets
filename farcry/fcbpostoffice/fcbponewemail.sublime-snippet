@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+stEmail = new fcbEmail(
+	to = $1,
+	from = $2,
+	subject = $3,
+	body = $4
+)$0
+]]></content>
+	<tabTrigger>fcbponewemail</tabTrigger>
+	<description>fcbPostOffice new email definition</description>
+</snippet>
