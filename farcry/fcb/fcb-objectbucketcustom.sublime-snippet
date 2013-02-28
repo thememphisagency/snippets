@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<cfset ${1:oType} = request.fcbObjectBucket.create(fullpath="${2:dmHTML}") />]]></content>
+	<tabTrigger>fcbBucketCustom</tabTrigger>
+	<description>FCB Object Bucket Custom Type</description>
+</snippet>
