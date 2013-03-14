@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[application.fc.utils.createJavaUUID()]]>$0</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>createuuid</tabTrigger>
+	<description>Create uuid using createJavaUUID function which is must faster than the standard createUUID() function.</description>
+</snippet>
