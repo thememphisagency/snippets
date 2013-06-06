@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+{
+	"name":"$1",
+	"url":"$2",
+	"filepath":"\\\\$3",
+	"subpages":[
+		$4
+	]
+}
+]]></content>
+	<tabTrigger>jsonis</tabTrigger>
+	<description>JSON Import Script Item With Sub Page</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+,
+"subpages":[
+	$1
+]
+]]></content>
+	<tabTrigger>jsonsp</tabTrigger>
+	<description>JSON Import Script Sub Page</description>
+</snippet>

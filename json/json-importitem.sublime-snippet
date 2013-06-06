@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{
+	"name":"$1",
+	"url":"$2",
+	"filepath":"\\\\$3"
+}
+]]></content>
+	<tabTrigger>jsoni</tabTrigger>
+	<description>JSON Import Script Item</description>
+</snippet>
