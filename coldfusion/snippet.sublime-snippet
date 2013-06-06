@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[<snippet>
+    <content><![CDATA[
+    	${1:snippet code here}
+    ]]${-1}></content>
+    <tabTrigger>${2:command}</tabTrigger>
+    <scope>source.${3:scope}</scope>
+    <description>${4:description}</description>
+</snippet>]]></content>
+    <tabTrigger>sn</tabTrigger>
+    <description>Create snippet</description>
+</snippet>
